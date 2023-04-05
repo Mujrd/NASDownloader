@@ -4,14 +4,14 @@ from requests import get,post
 from system import Bot
 from config import *
 
-api = f"https://api.telegram.org/bot" + token_bot + "/"
+api = f"https://api.telegram.org/bot" + 5834702218:AAF2RdUaGLNryhpH4ULkoUEvzSZSr2k7JZM + "/"
 update_id = 0
 
 print("BOT ACTIVED")
 print("PRESS CTRL + C TO EXIT ")
 while True:
 	try:
-		req = get(f"https://api.telegram.org/bot{token_bot}/getupdates",params={"offset":update_id}).json()
+		req = get(f"https://api.telegram.org/bot{5834702218:AAF2RdUaGLNryhpH4ULkoUEvzSZSr2k7JZM}/getupdates",params={"offset":update_id}).json()
 		if len(req['result']) == 0:
 			continue
 		try:
